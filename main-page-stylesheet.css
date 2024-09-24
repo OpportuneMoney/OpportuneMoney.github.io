@@ -1,0 +1,35 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*top naviogation styles start*/
+.top-navigation-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items:left;
+    background-color: red;
+}
+.top-navigation-section .grid-navigation-container{
+    list-style-type: none;
+}
+
+.top-navigation-section li a{
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding:10px;
+    float: left;
+}
+
+.top-navigation-section li a:hover{
+    background-color: orange;
+}
+.top-navigation-section .active{
+    font-weight:bold;
+}
+
+/*top nagivation styles end*/
