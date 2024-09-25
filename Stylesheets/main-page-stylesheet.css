@@ -39,7 +39,6 @@ h2{
 }
 
 .navigation-links-main-page-html li a{
-    transition: all 0.3s ease 0s;
     color: #FBF3DB;
     text-decoration:none;
 }
@@ -69,3 +68,7 @@ h2{
     padding: 10px;
     font-size: 30px;
 }
+
+/*video/main section ends*/
+
+/*flavors section begins*/
