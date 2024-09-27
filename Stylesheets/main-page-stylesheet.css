@@ -1,60 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: "Archivo Black", sans-serif ;
+    font-family: "Archivo Black", sans-serif;
     font-weight: 500;
 }
 
-body{
+body {
     background-color: #FBF3DB;
 }
 
 /*top naviogation styles start*/
-.top-navigation-section{
+#top-navigation-section{
+  position: sticky;
+    top: 0;  
+}
+#top-navigation-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;   
+    padding: 30px 10%;
     background-color: #911610;
     font-size: 16px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-h2{
+h2 {
     margin-left: auto;
     order: 1;
     color: #FBF3DB;
 }
 
-.navigation-links-main-page-html{
+#navigation-links-main-page-html {
     list-style: none;
 }
 
-.navigation-links-main-page-html li{
+#navigation-links-main-page-html li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.navigation-links-main-page-html li a{
+#navigation-links-main-page-html li a {
     color: #FBF3DB;
-    text-decoration:none;
+    text-decoration: none;
 }
-.navigation-links-main-page-html li a:hover{
+
+#navigation-links-main-page-html li a:hover {
     text-decoration: underline;
     text-decoration-style: wavy;
 }
+
 /*top nagivation styles end*/
 
 /*video/main section begins*/
 
-.video-section{
+#video-section {
     display: grid;
     gap: 20px;
 }
-.video-section .sippi-header-video{
+
+#video-section #sippi-header-video {
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -62,7 +71,7 @@ h2{
     border-radius: 20px;
 }
 
-.video-section p{
+#video-section p {
     color: #911610;
     text-align: center;
     padding: 10px;
@@ -70,5 +79,21 @@ h2{
 }
 
 /*video/main section ends*/
+
+/*icon/svg section begins*/
+
+#icon-section #icon-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 20px;
+}
+
+#icon-container div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*flavors section begins*/
