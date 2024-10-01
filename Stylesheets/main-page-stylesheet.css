@@ -81,11 +81,11 @@ body {
 .icon-section .icon-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    gap: 20px;
+    justify-content:space-around;
     align-items: center;
     background-color: #d81159;
     padding: 5px;
+    
 }
 
 .icon-container div{
@@ -287,3 +287,21 @@ background-color: #71092F;
 transition: 0.5s;
 }
 /*-----------------flavors section ends-----------------*/
+/*-----------------about section starts-----------------*/
+.about-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #d81159;
+    padding: 10px;
+    border-radius: 20px;
+    gap: 20px;
+  }
+
+  .grid-item {
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+  }
