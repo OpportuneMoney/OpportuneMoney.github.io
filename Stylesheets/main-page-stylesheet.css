@@ -343,6 +343,7 @@ transition: 0.5s;
 .col-left li:hover{
     text-decoration: underline;
     text-decoration-style: wavy;
+    cursor: pointer;
 }
 .col-left ul{
     list-style: none;
