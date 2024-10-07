@@ -25,7 +25,7 @@ body {
     align-items: center;
     padding: 20px 10%;
     background-color: #fbf3db;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     outline: #d81159 solid 5px;
@@ -94,7 +94,7 @@ body {
 }
 
 .icon-container p {
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     color: #fbf3db;
     margin-left: 10px;
 }
@@ -117,11 +117,11 @@ body {
     color: #d81159;
     text-align: center;
     padding-bottom: 80px;
-    font-size: 2rem;
+    font-size: 2vw;
 }
 .product-category{
     padding: 0 10vw;
-    font-size: 2rem;
+    font-size: 2vw;
     margin-bottom: 40px;
     text-transform: capitalize;
     text-align: center;
@@ -197,7 +197,7 @@ body {
 
 .product-brand{
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .pre-btn, .nxt-btn{
@@ -231,52 +231,20 @@ body {
 opacity: 1;
 }
 
-.collection-container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 10px;
-}
-
-.collection{
-    position: relative;
-}
-
-.collection img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.collection p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 50px;
-    text-transform: capitalize;
-}
-
-.collection:nth-child(3){
-    grid-column: span 2;
-    margin-bottom: 10px;
-}
-
 .flavor-html-button {
     text-align: center;
 }
 
 
 .flavor-html-button .button{
-    display: inline-block; /* Ensures it's treated as an inline-block for centering */
+    display: inline-block; 
     margin:  50px 0 50px 0;
     background-color: #d81159;
   border: none;
   color: #fbf3db;
   padding: 15px 32px; 
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   cursor: pointer;
   border-radius: 50px;
   transition: 0.5s;
@@ -287,6 +255,7 @@ background-color: #71092F;
 transition: 0.5s;
 }
 /*-----------------flavors section ends-----------------*/
+
 /*-----------------about section starts-----------------*/
 .about-grid-container {
     display: grid;
@@ -297,12 +266,10 @@ transition: 0.5s;
     gap: 50px;
   }
 
- 
-
   .about-grid-container .grid-item-2{
     padding: 2%;
     display: flex;
-    font-size: 2rem;
+    font-size: 2vw;
     color: #FBF3DB;
     text-align: center;
     justify-content: center;
@@ -311,7 +278,6 @@ transition: 0.5s;
 
   .about-grid-container .grid-item-1 img{
     border-radius: 64% 36% 38% 62% / 48% 36% 64% 52%;
-    text-align: center;
     overflow: hidden;
     outline: #71092F dashed 20px;
     width: 100%;
@@ -330,8 +296,9 @@ transition: 0.5s;
 }
 
 .footer-container{
+    position: relative;
     color: #FBF3DB;
-    padding-top: 5rem;
+    padding:100px 100px 100px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -345,8 +312,12 @@ transition: 0.5s;
     text-decoration-style: wavy;
     cursor: pointer;
 }
+.col-left h2{
+    font-size: 1.3vw;
+}
 .col-left ul{
     list-style: none;
+    font-size: 1.2vw;
 }
 
 .col-left li{
@@ -356,6 +327,7 @@ transition: 0.5s;
 
 .col-right h2{
     text-align: right;
+    font-size: 1.2vw;
 }
 
 .col-right form{
@@ -364,7 +336,7 @@ transition: 0.5s;
 
 .col-right button{
     padding: 12px;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     cursor: pointer;
     border-radius: 30px;
     background-color: #FBF3DB;
@@ -383,7 +355,48 @@ transition: 0.5s;
     height: 3rem;
     border-radius: 30px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1vw;
+}
+
+.col-bottom{
+    margin-top: 100px; /* Add some spacing to separate from above */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2vw;
 }
 
 /*-----------------footer section ends-----------------*/
+
+/*-----------------media queries---------------*/
+/* < 600px, 601px, 768px, 992px, 1200px*/
+@media only screen and (max-width: 600px) and (orientation: landscape){
+    .top-navigation-container{
+        background-color: aqua;
+    }
+}
+
+@media  only screen and  (min-width: 601px) and (orientation: portrait){
+    .top-navigation-container{
+        background-color: green;
+    }
+}
+
+@media  only screen and (min-width: 768px){
+    .top-navigation-container{
+        background-color: yellow;
+    }
+}
+
+@media  only screen and (min-width: 992px){
+    .top-navigation-container{
+        background-color: purple;
+    }
+}
+
+@media  only screen and (min-width: 1200px){
+    .top-navigation-container{
+        background-color: orange;
+    }
+}
