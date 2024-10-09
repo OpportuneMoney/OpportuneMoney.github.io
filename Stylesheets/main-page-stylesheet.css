@@ -371,7 +371,8 @@ transition: 0.5s;
 
 /*-----------------media queries---------------*/
 /* < 600px, 601px, 768px, 992px, 1200px*/
-@media only screen and (max-width: 600px) and (orientation: landscape){
+
+/*@media only screen and (max-width: 600px) and (orientation: landscape){
     .top-navigation-container{
         background-color: aqua;
     }
@@ -399,4 +400,4 @@ transition: 0.5s;
     .top-navigation-container{
         background-color: orange;
     }
-}
+}*/
