@@ -81,7 +81,7 @@ body {
 .icon-section .icon-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content:space-between;
+    justify-content:space-evenly;
     justify-items: center;
     background-color: #d81159;
     padding: 5px;
@@ -279,7 +279,7 @@ transition: 0.5s;
   .about-grid-container .grid-item-1 img{
     border-radius: 64% 36% 38% 62% / 48% 36% 64% 52%;
     overflow: hidden;
-    outline: #71092F dashed 20px;
+    outline: #71092F dashed 5px;
     width: 100%;
     height: auto;
     object-fit: cover;
