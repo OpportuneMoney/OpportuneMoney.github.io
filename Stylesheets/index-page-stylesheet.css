@@ -13,23 +13,94 @@ body {
     background-color: #FBF3DB;
 }
 
-/*-----------------top naviogation styles start-----------------*/
-.top-navigation-section{
-  position: sticky;
-    top: 0; 
-    z-index: 10; 
+
+/*-----------------pop up section start-----------------*/
+.shadowed-background{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
 }
+
+.pop-up-section #modelBox{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width:min-content;
+    background:#FBF3DB;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 4;
+    text-align: center;
+}
+
+.offer-text{
+    margin: 30px;
+    font-size: 1rem;
+    color: #d81159;
+}
+
+.offer-text h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.pop-up-section form button{
+    margin: 10px;
+    padding: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #d81159;
+    color: #fff;
+}
+
+.pop-up-section input {
+    margin-top: 20px;
+    width: 400px;
+    height: 3rem;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1rem;
+    outline: #d81159 2px solid;
+}
+
+.close-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/*-----------------pop up section end-----------------*/
+
+/*-----------------top navigation styles start-----------------*/
+.top-navigation-section {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
 .top-navigation-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 20px 10%;
     background-color: #fbf3db;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     outline: #d81159 solid 5px;
-    box-shadow:  0 8px 8px 0 #71092F, 0 6px 20px 0 #71092F;
+    box-shadow: 0 8px 8px 0 #71092F, 0 6px 20px 0 #71092F;
 }
 
 .top-navigation-section h2 {
@@ -74,6 +145,7 @@ body {
     padding: 5px;
     border-radius: 20px;
 }
+
 /*-----------------video/main section ends-----------------*/
 
 /*-----------------icon/svg section begins-----------------*/
@@ -81,32 +153,32 @@ body {
 .icon-section .icon-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     justify-items: center;
     background-color: #d81159;
     padding: 5px;
-    
+
 }
 
-.icon-container div{
+.icon-container div {
     display: flex;
     align-items: center;
 }
 
 .icon-container p {
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     color: #fbf3db;
     margin-left: 10px;
 }
 
-.icon-container svg{
- display: block;
+.icon-container svg {
+    display: block;
 }
 
 
 
 /*-----------------flavors section begins-----------------*/
-.flavor-section{
+.flavor-section {
     position: relative;
     overflow: hidden;
     padding: 20px;
@@ -117,17 +189,18 @@ body {
     color: #d81159;
     text-align: center;
     padding-bottom: 80px;
-    font-size: 2vw;
+    font-size: 3rem;
 }
-.product-category{
+
+.product-category {
     padding: 0 10vw;
-    font-size: 2vw;
+    font-size: 2rem;
     margin-bottom: 40px;
     text-transform: capitalize;
     text-align: center;
 }
 
-.product-container{
+.product-container {
     padding: 0;
     display: flex;
     overflow-x: auto;
@@ -135,33 +208,33 @@ body {
     scroll-behavior: smooth;
 }
 
-.product-container::-webkit-scrollbar{
+.product-container::-webkit-scrollbar {
     display: none;
 }
 
-.product-card{
-    flex:0 0 auto;
+.product-card {
+    flex: 0 0 auto;
     width: 250px;
     height: 430px;
     margin-right: 20px;
     border-radius: 15px;
 }
 
-.product-image{
+.product-image {
     position: relative;
     width: 100%;
     height: 350px;
     overflow: hidden;
 }
 
-.product-thumb{
+.product-thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 
-.card-btn{
+.card-btn {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -179,28 +252,29 @@ body {
     color: #d81159;
 }
 
-.product-card:hover .card-btn{
+.product-card:hover .card-btn {
     opacity: 1;
 
 }
-  
-.card-btn:hover{
+
+.card-btn:hover {
     background: #d81159;
     color: #FBF3DB;
 }
 
-.product-info{
+.product-info {
     width: 100%;
     height: 100%;
     padding: 10px 0 0 0;
 }
 
-.product-brand{
+.product-brand {
     text-align: center;
     font-size: 1.2rem;
 }
 
-.pre-btn, .nxt-btn{
+.pre-btn,
+.nxt-btn {
     border: none;
     width: 10vw;
     height: 100%;
@@ -211,24 +285,26 @@ body {
     align-items: center;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0)0%, #fbf3db 100%);
     cursor: pointer;
-    z-index: 9;
+    z-index: 1;
 }
 
-.pre-btn{
+.pre-btn {
     left: 0;
     transform: rotate(180deg);
 }
 
-.nxt-btn{
+.nxt-btn {
     right: 0;
 }
 
-.pre-btn img, .nxt-btn img{
+.pre-btn img,
+.nxt-btn img {
     opacity: 0.2;
 }
 
-.pre-btn:hover img, .nxt-btn:hover img{
-opacity: 1;
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
 }
 
 .flavor-html-button {
@@ -236,135 +312,165 @@ opacity: 1;
 }
 
 
-.flavor-html-button .button{
-    display: inline-block; 
-    margin:  50px 0 50px 0;
+.flavor-html-button .button {
+    display: inline-block;
+    margin: 50px 0 50px 0;
     background-color: #d81159;
-  border: none;
-  color: #fbf3db;
-  padding: 15px 32px; 
-  text-decoration: none;
-  font-size: 1.2vw;
-  cursor: pointer;
-  border-radius: 50px;
-  transition: 0.5s;
+    border: none;
+    color: #fbf3db;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.5s;
 }
 
-.flavor-html-button .button:hover{
-background-color: #71092F;
-transition: 0.5s;
+.flavor-html-button .button:hover {
+    background-color: #71092F;
+    transition: 0.5s;
 }
+
 /*-----------------flavors section ends-----------------*/
 
 /*-----------------about section starts-----------------*/
-.about-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.about-blurb-section {
     background-color: #d81159;
-    padding: 50px;
-    border-radius: 20px;
-    gap: 50px;
-  }
-
-  .about-grid-container .grid-item-2{
-    padding: 2%;
-    display: flex;
-    font-size: 2vw;
     color: #FBF3DB;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
+    border-radius: 20px;
+}
 
-  .about-grid-container .grid-item-1 img{
-    border-radius: 64% 36% 38% 62% / 48% 36% 64% 52%;
-    overflow: hidden;
-    outline: #71092F dashed 5px;
+.section-header {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.about-grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 50px;
+}
+
+.grid-item {
+    flex: 1 1 30%;
+    max-width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #71092F;
+    border-radius: 5%;
+    padding: 20px;
+}
+
+.grid-item img {
+    border-radius: 5%;
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
+    max-height: max-content;
+}
+
+.grid-item .header {
+    font-size: 1.5rem;
+    margin: 20px 0px 20px 0px;
+    /*top margin is 1st, right margin is 2nd, bottom margin is 3rd, left margin is 4th*/
+}
+
+.grid-item p {
+    margin: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
 /*-----------------about section ends-----------------*/
 
 /*-----------------footer section starts-----------------*/
 
-.footer-section{
+.footer-section {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-top: 50px;
     background-color: #71092F;
 }
 
-.footer-container{
+.footer-container {
     position: relative;
     color: #FBF3DB;
-    padding:100px 100px 100px;
+    padding: 100px 100px 100px;
     display: flex;
     flex-direction: row;
     width: 100%;
-    text-align:left;
+    text-align: left;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.col-left li:hover{
+.col-left li:hover {
     text-decoration: underline;
     text-decoration-style: wavy;
     cursor: pointer;
 }
-.col-left h2{
-    font-size: 1.3vw;
+
+.col-left h2 {
+    font-size: 1.3rem;
 }
-.col-left ul{
+
+.col-left ul {
     list-style: none;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
 }
 
-.col-left li{
+.col-left li {
     margin-top: 10px;
-    
+
 }
 
-.col-right h2{
+.col-right h2 {
     text-align: right;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
 }
 
-.col-right form{
+.col-right form {
     margin-top: 10px;
 }
 
-.col-right button{
+.col-right button {
     padding: 12px;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     cursor: pointer;
     border-radius: 30px;
     background-color: #FBF3DB;
-    color:#d81159 ;
+    color: #d81159;
     transition: 0.5s;
 }
 
-.col-right button:hover{
-background-color: #d81159;
-color: #FBF3DB;
-transition: 0.5s;
+.col-right button:hover {
+    background-color: #d81159;
+    color: #FBF3DB;
+    transition: 0.5s;
 }
 
-.col-right input{
+.col-right input {
     width: 400px;
     height: 3rem;
     border-radius: 30px;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
-.col-bottom{
-    margin-top: 100px; /* Add some spacing to separate from above */
+.col-bottom {
+    margin-top: 100px;
+    /* Add some spacing to separate from above */
     display: flex;
     justify-content: space-around;
     width: 100%;
     text-align: left;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
 }
 
 /*-----------------footer section ends-----------------*/

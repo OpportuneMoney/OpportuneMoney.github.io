@@ -15,3 +15,21 @@ productContainers.forEach((item,i)=>{
         item.scrollLeft -= containerWidth;
     })
 })
+
+
+let modelBox = document.getElementById("modelBox");
+let shadowedBg = document.querySelector(".shadowed-background");
+window.onload = function(){
+    modelBox.style.display = "flex";
+    modelBox.style.alignContent = "center";
+    modelBox.style.alignItems = "center";
+    modelBox.style.flexWrap = "wrap";
+    modelBox.style.flexDirection = "column";
+    modelBox.style.justifyContent = "center";
+    shadowedBg.style.display = "block";
+}
+
+function closeModel(){
+    modelBox.style.display = "none";
+    shadowedBg.style.display = "none";
+}
