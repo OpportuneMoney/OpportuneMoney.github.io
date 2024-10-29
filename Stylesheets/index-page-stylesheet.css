@@ -11,6 +11,7 @@
 
 body {
     background-color: #FBF3DB;
+    min-width: 600px;
 }
 
 
@@ -31,7 +32,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width:min-content;
+    max-width: min-content;
     background:#FBF3DB;
     border-radius: 10px;
     overflow: hidden;
@@ -478,32 +479,441 @@ body {
 /*-----------------media queries---------------*/
 /* < 600px, 601px, 768px, 992px, 1200px*/
 
-/*@media only screen and (max-width: 600px) and (orientation: landscape){
+@media only screen and (max-width: 600px){
     .top-navigation-container{
         background-color: aqua;
     }
+
+    .shadowed-background{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 3;
+    }
+    
+    .pop-up-section #modelBox{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        background:#FBF3DB;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 4;
+        text-align: center;
+    }
+    
+    .offer-text{
+        margin: 30px;
+        font-size: 0.7rem;
+        color: #d81159;
+    }
+    
+    .offer-text h2{
+        font-size: 1rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    .pop-up-section form button{
+        margin: 10px;
+        padding: 12px 40px 12px 40px;
+        font-size:0.7rem;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: #d81159;
+        color: #fff;
+    }
+    
+    .pop-up-section input {
+        margin-top: 20px;
+        width: 200px;
+        height: 3rem;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 0.7rem;
+        outline: #d81159 2px solid;
+    }
+    
+    .close-icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+    
 }
 
-@media  only screen and  (min-width: 601px) and (orientation: portrait){
+@media  only screen and  (min-width: 600px) and (orientation: portrait){
     .top-navigation-container{
         background-color: green;
     }
+
+    .shadowed-background{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 3;
+    }
+    
+    .pop-up-section #modelBox{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        background:#FBF3DB;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 4;
+        text-align: center;
+    }
+    
+    .offer-text{
+        margin: 30px;
+        font-size: 0.7rem;
+        color: #d81159;
+    }
+    
+    .offer-text h2{
+        font-size: 1rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    .pop-up-section form button{
+        margin: 10px;
+        padding: 12px 40px 12px 40px;
+        font-size:0.7rem;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: #d81159;
+        color: #fff;
+    }
+    
+    .pop-up-section input {
+        margin-top: 20px;
+        width: 200px;
+        height: 3rem;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 0.7rem;
+        outline: #d81159 2px solid;
+    }
+    
+    .close-icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) and (orientation: landscape){
+    .top-navigation-container{
+        background-color: pink;
+    }
+
+    .shadowed-background{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 3;
+    }
+    
+    .pop-up-section #modelBox{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        background:#FBF3DB;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 4;
+        text-align: center;
+    }
+    
+    .offer-text{
+        margin: 30px;
+        font-size: 0.7rem;
+        color: #d81159;
+    }
+    
+    .offer-text h2{
+        font-size: 1rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    .pop-up-section form button{
+        margin: 10px;
+        padding: 12px 40px 12px 40px;
+        font-size:0.7rem;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: #d81159;
+        color: #fff;
+    }
+    
+    .pop-up-section input {
+        margin-top: 20px;
+        width: 200px;
+        height: 2rem;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 0.7rem;
+        outline: #d81159 2px solid;
+    }
+    
+    .close-icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+    
 }
 
 @media  only screen and (min-width: 768px){
     .top-navigation-container{
         background-color: yellow;
     }
+
+    .shadowed-background{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 3;
+    }
+    
+    .pop-up-section #modelBox{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        background:#FBF3DB;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 4;
+        text-align: center;
+    }
+    
+    .offer-text{
+        margin: 30px;
+        font-size: 0.7rem;
+        color: #d81159;
+    }
+    
+    .offer-text h2{
+        font-size: 1rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    .pop-up-section form button{
+        margin: 10px;
+        padding: 12px 40px 12px 40px;
+        font-size:0.7rem;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: #d81159;
+        color: #fff;
+    }
+    
+    .pop-up-section input {
+        margin-top: 20px;
+        width: 200px;
+        height: 3rem;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 0.7rem;
+        outline: #d81159 2px solid;
+    }
+    
+    .close-icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+    
 }
 
 @media  only screen and (min-width: 992px){
     .top-navigation-container{
         background-color: purple;
     }
+
+    .shadowed-background{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 3;
+    }
+    
+    .pop-up-section #modelBox{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        background:#FBF3DB;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 4;
+        text-align: center;
+    }
+    
+    .offer-text{
+        margin: 30px;
+        font-size: 0.7rem;
+        color: #d81159;
+    }
+    
+    .offer-text h2{
+        font-size: 1rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    .pop-up-section form button{
+        margin: 10px;
+        padding: 12px 40px 12px 40px;
+        font-size:0.7rem;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: #d81159;
+        color: #fff;
+    }
+    
+    .pop-up-section input {
+        margin-top: 20px;
+        width: 200px;
+        height: 3rem;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 0.7rem;
+        outline: #d81159 2px solid;
+    }
+    
+    .close-icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+    
 }
 
 @media  only screen and (min-width: 1200px){
     .top-navigation-container{
         background-color: orange;
     }
-}*/
+
+    .shadowed-background{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 3;
+    }
+    
+    .pop-up-section #modelBox{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        background:#FBF3DB;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 4;
+        text-align: center;
+
+    }
+    
+    .offer-text{
+        margin: 20px 50px 20px 50px;
+        font-size: 0.7rem;
+        color: #d81159;
+    }
+    
+    .offer-text h2{
+        font-size: 1rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    .pop-up-section form button{
+        margin: 10px;
+        padding: 12px 40px 12px 40px;
+        font-size:0.7rem;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: #d81159;
+        color: #fff;
+    }
+    
+    .pop-up-section input {
+        margin-top: 20px;
+        width: 200px;
+        height: 3rem;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 0.7rem;
+        outline: #d81159 2px solid;
+    }
+    
+    .close-icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .flavor-section p {
+        color: #d81159;
+        text-align: center;
+        padding-bottom: 80px;
+        font-size: 2rem;
+    }
+}    
