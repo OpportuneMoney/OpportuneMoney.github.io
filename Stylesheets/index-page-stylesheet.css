@@ -505,7 +505,7 @@ body {
 /*-----------------media queries---------------*/
 /* < 600px, 601px, 768px, 992px, 1200px*/
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) and (orientation: portrait){
     .top-navigation-container{
         background-color: aqua;
     }
@@ -530,13 +530,25 @@ body {
     .col-left{
         margin: 10px 0 10px 0;
     }
+
+    .col-right{
+        padding: 0;
+    }
 }
 
-@media  only screen and  (min-width: 600px) and (orientation: portrait){
+@media  only screen and  (min-width: 600px) and (orientation: landscape){
     .top-navigation-container{
         background-color: green;
     }
 
+    
+.icon-container p {
+    font-size: 14px;
+}
+
+.flavor-section p {
+    font-size: 22px;
+}
 
     .footer-container {
         position: relative;
@@ -561,7 +573,7 @@ body {
     
 }
 
-@media only screen and (min-width: 600px) and (orientation: landscape){
+@media only screen and (min-width: 768px){
     .top-navigation-container{
         background-color: pink;
     }
@@ -590,79 +602,7 @@ body {
     
 }
 
-@media  only screen and (min-width: 768px) and (max-width:991){
-    .top-navigation-container{
-        background-color: yellow;
-    }
-
-    .shadowed-background{
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index: 3;
-    }
-    
-    .pop-up-section #modelBox{
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-        background:#FBF3DB;
-        border-radius: 10px;
-        overflow: hidden;
-        z-index: 4;
-        text-align: center;
-    }
-    
-    .offer-text{
-        margin: 30px;
-        font-size: 0.7px;
-        color: #d81159;
-    }
-    
-    .offer-text h2{
-        font-size: 1px;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-    }
-    
-    .pop-up-section form button{
-        margin: 10px;
-        padding: 12px 40px 12px 40px;
-        font-size:0.7px;
-        cursor: pointer;
-        border-radius: 30px;
-        background-color: #d81159;
-        color: #fff;
-    }
-    
-    .pop-up-section input {
-        margin-top: 20px;
-        width: 200px;
-        height: 3px;
-        border-radius: 30px;
-        text-align: center;
-        font-size: 0.7px;
-        outline: #d81159 2px solid;
-    }
-    
-    .close-icon{
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        cursor: pointer;
-    }
-    
-}
-
-@media  only screen and (min-width: 992px ) and (max-width:1199px){
+@media  only screen and (min-width: 992px) and (max-width:1199px){
     .top-navigation-container{
         background-color: purple;
     }
