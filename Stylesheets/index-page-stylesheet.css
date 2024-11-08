@@ -506,6 +506,7 @@ body {
 /* < 600px, 601px, 768px, 992px, 1200px*/
 
 @media only screen and (max-width: 600px) and (orientation: portrait){
+    /*change the navbar for mobile devices*/
     .top-navigation-container{
         background-color: aqua;
     }
@@ -537,6 +538,8 @@ body {
 }
 
 @media  only screen and  (min-width: 600px) and (orientation: landscape){
+       /*change the navbar for mobile devices
+       https://www.w3schools.com/howto/howto_js_mobile_navbar.asp*/
     .top-navigation-container{
         background-color: green;
     }
