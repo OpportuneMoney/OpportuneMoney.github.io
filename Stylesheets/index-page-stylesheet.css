@@ -113,17 +113,22 @@ body {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     outline: #d81159 solid 5px;
-    box-shadow: 0 8px 8px 0 #71092F, 0 6px 20px 0 #71092F;
+     box-shadow: 1px 9px 8px #71092F;
 }
 
-.top-navigation-section h2 {
+.top-navigation-section h1 {
     margin-left: auto;
     order: 1;
     color: #d81159;
 }
-
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
 .navigation-links-main-page-html {
     list-style: none;
+    display: flex;
 }
 
 .navigation-links-main-page-html li {
@@ -198,7 +203,7 @@ body {
     margin-top: 50px;
 }
 
-.flavor-section p {
+.flavor-section h2 {
     color: #d81159;
     text-align: center;
     padding-bottom: 80px;
@@ -219,6 +224,10 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
+}
+
+.product-container h3{
+    color: #fbf3db;
 }
 
 .product-container::-webkit-scrollbar {
@@ -457,8 +466,7 @@ body {
 .col-right{
     padding: 20px;
 }
-.col-right h2 {
-    text-align: right;
+.col-right label {
     font-size: 16px;
 }
 
@@ -505,12 +513,41 @@ body {
 /*-----------------media queries---------------*/
 /* < 600px, 601px, 768px, 992px, 1200px*/
 
-@media only screen and (max-width: 600px) and (orientation: portrait){
+@media only screen and (max-width: 600px){
     /*change the navbar for mobile devices*/
     .top-navigation-container{
         background-color: aqua;
     }
+    .navigation-links-main-page-html {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: aqua;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        padding: 10px 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom: #d81159 solid 5px;
+        box-shadow: 1px 9px 8px #71092F;
+    }
 
+    .hamburger-menu {
+        display: block; 
+        color: #d81159;
+    }
+
+    .navigation-links-main-page-html.active {
+        display: flex; 
+    }
+
+    .navigation-links-main-page-html li {
+        padding: 15px 0;
+        width: 100%;
+    }
+   
     .footer-container {
         position: relative;
         color: #FBF3DB;
@@ -537,11 +574,66 @@ body {
     }
 }
 
-@media  only screen and  (min-width: 600px) and (orientation: landscape){
+@media  only screen and  (min-width: 600px) and (max-width: 768px) and (orientation: landscape){
        /*change the navbar for mobile devices
        https://www.w3schools.com/howto/howto_js_mobile_navbar.asp*/
     .top-navigation-container{
         background-color: green;
+    }
+
+    .navigation-links-main-page-html {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: green;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        padding: 10px 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom: #d81159 solid 5px;
+        box-shadow: 1px 9px 8px #71092F;
+    }
+
+    .hamburger-menu {
+        display: block; 
+        color: #d81159;
+    }
+
+    .navigation-links-main-page-html.active {
+        display: flex; 
+    }
+
+    .navigation-links-main-page-html li {
+        padding: 15px 0;
+        width: 100%;
+    }
+   
+    .footer-container {
+        position: relative;
+        color: #FBF3DB;
+        padding: 100px 100px 100px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .col-right h2 {
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .col-left{
+        margin: 10px 0 10px 0;
+    }
+
+    .col-right{
+        padding: 0;
     }
 
     
@@ -576,7 +668,7 @@ body {
     
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 769px){
     .top-navigation-container{
         background-color: pink;
     }
@@ -601,8 +693,6 @@ body {
     .col-left{
         margin: 10px 0 10px 0;
     }
-    
-    
 }
 
 @media  only screen and (min-width: 992px) and (max-width:1199px){
@@ -638,7 +728,7 @@ body {
     .top-navigation-container{
         background-color: orange;
     }
-    
+
     .footer-container {
         position: relative;
         color: #FBF3DB;

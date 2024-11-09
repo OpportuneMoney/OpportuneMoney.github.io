@@ -33,3 +33,9 @@ function closeModel(){
     modelBox.style.display = "none";
     shadowedBg.style.display = "none";
 }
+
+
+function toggleMenu() {
+    var nav = document.querySelector('.navigation-links-main-page-html');
+    nav.classList.toggle('active');
+}
