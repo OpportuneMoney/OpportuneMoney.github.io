@@ -11,7 +11,6 @@
 
 body {
     background-color: #FBF3DB;
-    min-width: 600px;
 }
 
 
@@ -520,18 +519,6 @@ body {
     }
     .navigation-links-main-page-html {
         display: none; 
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        background-color: aqua;
-        position: absolute;
-        top: 60px; 
-        left: 0;
-        padding: 10px 0;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        border-bottom: #d81159 solid 5px;
-        box-shadow: 1px 9px 8px #71092F;
     }
 
     .hamburger-menu {
@@ -548,6 +535,15 @@ body {
         width: 100%;
     }
    
+    .icon-container p {
+        font-size: 12px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .icon-container div {
+     flex-direction: column;
+    }
     .footer-container {
         position: relative;
         color: #FBF3DB;
@@ -557,7 +553,7 @@ body {
         width: 100%;
         text-align: center;
         justify-content: space-evenly;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     
     .col-right h2 {
@@ -572,11 +568,18 @@ body {
     .col-right{
         padding: 0;
     }
+ 
+    .col-right input {
+      width: min-content;
+      font-size: 14px;
+    }
+
+    .col-bottom{
+        text-align: center;
+    }
 }
 
 @media  only screen and  (min-width: 600px) and (max-width: 768px) and (orientation: landscape){
-       /*change the navbar for mobile devices
-       https://www.w3schools.com/howto/howto_js_mobile_navbar.asp*/
     .top-navigation-container{
         background-color: green;
     }
