@@ -514,11 +514,21 @@ body {
 
 @media only screen and (max-width: 600px) and (orientation: portrait){
     /*change the navbar for mobile devices*/
-    .top-navigation-container{
-        background-color: aqua;
-    }
+   
     .navigation-links-main-page-html {
         display: none; 
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #fbf3db;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        padding: 10px 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom: #d81159 solid 5px;
+        box-shadow: 1px 9px 8px #71092F;
     }
 
     .hamburger-menu {
@@ -580,16 +590,12 @@ body {
 }
 
 @media  only screen and  (min-width: 600px) and (max-width: 768px) and (orientation: landscape){
-    .top-navigation-container{
-        background-color: green;
-    }
-
     .navigation-links-main-page-html {
         display: none; 
         flex-direction: column;
         width: 100%;
         text-align: center;
-        background-color: green;
+        background-color: #fbf3db;
         position: absolute;
         top: 60px; 
         left: 0;
@@ -672,10 +678,6 @@ body {
 }
 
 @media only screen and (min-width: 769px){
-    .top-navigation-container{
-        background-color: pink;
-    }
-
     .footer-container {
         position: relative;
         color: #FBF3DB;
@@ -699,11 +701,6 @@ body {
 }
 
 @media  only screen and (min-width: 992px) and (max-width:1199px){
-    .top-navigation-container{
-        background-color: purple;
-    }
-
- 
 .footer-container {
     position: relative;
     color: #FBF3DB;
@@ -728,10 +725,6 @@ body {
 }
 
 @media  only screen and (min-width: 1200px){
-    .top-navigation-container{
-        background-color: orange;
-    }
-
     .footer-container {
         position: relative;
         color: #FBF3DB;
